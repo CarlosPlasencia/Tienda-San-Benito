@@ -1,0 +1,49 @@
+<header>
+  <div class="navbar-fixed">
+    <nav class="blue-grey darken-4">
+      <div class="nav-wrapper ">
+        <div class="brand-logo logo">
+           <%= link_to "Tienda San Benito", root_path%>
+        </div>
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+        
+        <ul class="right hide-on-med-and-down col s10">
+          <li>
+          <%=link_to "Productos", root_path %>
+          </li>
+          <% if user_signed_in?%>
+            <li>
+              <%=link_to "Cerrar sesion", destroy_user_session_path,method: :delete %>
+            </li>
+          <%else%>
+            <li>
+               <%=link_to "Iniciar sesion", new_user_session_path%>
+            </li>
+            <li>
+              <%=link_to "Crear cuenta", new_user_registration_path %>
+            </li>
+          <%end%> 
+        </ul>
+
+        <ul class="side-nav" id="mobile-demo">
+          <li>
+          <%=link_to "Productos", root_path %>
+          </li>
+          <% if user_signed_in?%>
+            <li>
+              <%=link_to "Cerrar sesion", destroy_user_session_path,method: :delete %>
+            </li>
+          <%else%>
+            <li>
+               <%=link_to "Iniciar sesion", new_user_session_path%>
+            </li>
+            <li>
+              <%=link_to "Crear cuenta", new_user_registration_path %>
+            </li>
+          <%end%> 
+        </ul>
+      </div>
+    </nav>
+  </div>
+        
+</header>
