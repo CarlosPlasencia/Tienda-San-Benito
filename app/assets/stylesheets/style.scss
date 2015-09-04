@@ -1,3 +1,12 @@
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
 
 .titulo-index{
  	font-family: 'Droid Serif', serif;
@@ -21,4 +30,13 @@
 
 .altura{
    height: 100px !important;
+}
+
+.quitar-top{
+	margin-top: 0px !important; 
+}
+
+.mensaje{
+	background-color: white;
+	font-size: 15px;
 }

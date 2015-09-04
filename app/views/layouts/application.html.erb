@@ -11,24 +11,24 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
   <%= csrf_meta_tags %>
 </head>
-<body class="light-green accent-1">
+<body class="light-green lighten-4">
 
 <%= render "partials/navigation" %>
 
 <%= yield %>
-
-
 
 <script type="text/javascript">
   $(document).ready(function(){
       $('.parallax').parallax();
       $(".button-collapse").sideNav();
       $(document).ready(function(){
-      $('.slider').slider({full_width: true});
+      $('.slider').slider();
     });
         
 });
+  
 </script>
 
 </body>
+<%= render "partials/final" %>
 </html>
