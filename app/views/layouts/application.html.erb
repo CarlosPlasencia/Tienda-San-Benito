@@ -17,18 +17,18 @@
 
 <%= yield %>
 
+<%= render "partials/final" %>
+
 <script type="text/javascript">
   $(document).ready(function(){
       $('.parallax').parallax();
       $(".button-collapse").sideNav();
-      $(document).ready(function(){
-      $('.slider').slider();
-    });
-        
-});
+      $('.slider').slider({Interval: 4000, Transition: 300});
+      $('.modal-trigger').leanModal();
+  });
   
 </script>
 
 </body>
-<%= render "partials/final" %>
+
 </html>

@@ -1,12 +1,4 @@
-  body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
 
-  main {
-    flex: 1 0 auto;
-  }
 
 .titulo-index{
  	font-family: 'Droid Serif', serif;
@@ -39,4 +31,10 @@
 .mensaje{
 	background-color: white;
 	font-size: 15px;
+}
+
+.card-padding{
+	padding: 0px !important;
+	margin-left: 15px !important;
+	margin-right: 15px !important; 
 }

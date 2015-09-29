@@ -23,42 +23,42 @@
 </div>
 
 <div class="container">
-	<div class="row espacio">
+	<div class="row">
 			<div class="slider col s12 z-depth-5 blue-grey darken-3">
 				<ul class="slides">
 				  <li>
 				   <%=image_tag "cablesTubos.jpg"%>
+				    <div class="caption left-align">
+				      <h4 class="red-text text-accent-4">Productos para tu constucción</h4>
+				      <h5 class="red-text text-darken-3">encuentra los mejores productos de gran calidad.</h5>
+				    </div>
+				  </li>
+				  <li>
+				    <%=image_tag "herramientas.jpg"%>
 				    <div class="caption left-align">
 				      <h4 class="grey-text text-darken-4">Productos para tu constucción</h4>
 				      <h5 class="grey-text text-darken-3">encuentra los mejores productos de gran calidad.</h5>
 				    </div>
 				  </li>
 				  <li>
-				    <%=image_tag "herramientas.jpg"%>
-				    <div class="caption left-align">
-				      <h3>Left Aligned Caption</h3>
-				      <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-				    </div>
-				  </li>
-				  <li>
-				    <%=image_tag "vigantol.jpg"%>
+				    <%=image_tag "animales.png"%>
 				    <div class="caption right-align">
-				      <h3>Right Aligned Caption</h3>
-				      <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+				      <h4 class="grey-text text-darken-4">Productos para tu constucción</h4>
+				      <h5 class="grey-text text-darken-3">encuentra los mejores productos de gran calidad.</h5>
 				    </div>
 				  </li>
 				  <li>
 				    <%=image_tag "vacas.jpg"%>
 				    <div class="caption center-align">
-				      <h3>This is our big Tagline!</h3>
-				      <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+				      <h4 class="grey-text text-darken-4">Productos para tu constucción</h4>
+				      <h5 class="grey-text text-darken-3">encuentra los mejores productos de gran calidad.</h5>
 				    </div>
 				  </li>
 				  <li>
-				    <%=image_tag "claro.jpg"%>
+				    <%=image_tag "claro3.jpg"%>
 				    <div class="caption center-align">
-				      <h3>This is our big Tagline!</h3>
-				      <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+				      <h4 class="grey-text text-darken-4">Productos para tu constucción</h4>
+				      <h5 class="grey-text text-darken-3">encuentra los mejores productos de gran calidad.</h5>
 				    </div>
 				  </li>
 				</ul>
@@ -72,7 +72,7 @@
 
 <div class="container">
 	<div class="row">
-			<div class="col s12 m4 espacio">
+			<div class="col s12 m4">
 				<div class="card small ">
 				    <div class="card-image waves-effect waves-block waves-light">
 				      <%= image_tag "herramientas.jpg", class: "activator"%>
@@ -80,18 +80,18 @@
 				    <div class="card-content blue-grey darken-4">
 				      <center><span class="card-title activator ">Ver Productos<i class="material-icons right">more_vert</i></span></center>
 				      <div class="right-align">
-				      	<br><p><a href="#" class="right-align">Ir a Productos<i class="material-icons right">web</i></a></p>
+				      	<br><p><a href="/products" class="right-align">Ir a Productos<i class="material-icons right">web</i></a></p>
 				      </div>
 				    </div>
-				    <div class="card-reveal blue-grey darken-3">
+				    <div class="card-reveal blue-grey darken-3 center-align">
 				      <span class="card-title">Nuestros Productos<i class="material-icons right">close</i></span>
-				      <p class="center-align">Ofrecemos distintos tipos de productos, desde material de ferreteria basico hasta medicina para ganadado vacuno, efectuamos recargas y más.</p>
-				      <p class="center-align">Ingresa y ve el catálogo de todos los productos que ofrecemos.</p>
+				      <p>Ofrecemos distintos tipos de productos, desde material de ferreteria basico hasta medicina para ganadado vacuno, efectuamos recargas y más.</p>
+				      <p>Ingresa y ve el catálogo de todos los productos que ofrecemos.</p>
 				    </div>
 				  </div>
 			</div>	
 
-			<div class="col s12 m4 espacio">
+			<div class="col s12 m4">
 				<div class="card small">
 				    <div class="card-image waves-effect waves-block waves-light">
 				      <%= image_tag "Familia.JPG", class: "activator"%>
@@ -99,18 +99,18 @@
 				    <div class="card-content blue-grey darken-4">
 				      <center><span class="card-title activator ">Sobre Nosotros<i class="material-icons right">more_vert</i></span></center>
 				      <div class="right-align">
-				      	<br><p><a href="#" class="right-align">Unetenos<i class="material-icons right">queue</i></a></p>
+				      	<br><p><a href="/users/sign_up" class="right-align">Unetenos<i class="material-icons right">queue</i></a></p>
 				      </div>
 				    </div>
-				    <div class="card-reveal blue-grey darken-3">
+				    <div class="card-reveal blue-grey darken-3 center-align">
 				      <span class="card-title">Sobre nosotros<i class="material-icons right">close</i></span>
-				      <p class="center-align">Somos una Familia San Benitera dedicados a la agricultura y ganaderia, para aumentar el sustento de la familia y ofrecer al publico productos que encuentras en muy pocas tiendas de San Benito, abrimos la pequeña tienta que ya  conoces.</p>
-				      <p class="center-align">Unete a esta gran familia, crea una cuenta para facilitar y mejorar tus compras.</p>
+				      <p>Somos una Familia San Benitera dedicados a la agricultura y ganaderia, para aumentar el sustento de la familia y ofrecer al publico productos que encuentras en muy pocas tiendas de San Benito, abrimos la pequeña tienta que ya  conoces.</p>
+				      <p>Unete a esta gran familia, crea una cuenta para facilitar y mejorar tus compras.</p>
 				    </div>
 				  </div>
 			</div>
 
-			<div class="col s12 m4  espacio">
+			<div class="col s12 m4">
 				<div class="card small">
 				    <div class="card-image waves-effect waves-block waves-light">
 				      <%= image_tag "SanBenito2.JPG", class: "activator"%>
@@ -118,21 +118,21 @@
 				    <div class="card-content blue-grey darken-4">
 				      <center><span class="card-title activator ">Ingresa al Site<i class="material-icons right">more_vert</i></span></center>
 				      <div class="right-align">
-				      	<br><p><a href="#" class="right-align">Inicia sesión<i class="material-icons right">assignment_ind</i></a></p>
+				      	<br><p><a href="/users/sign_in" class="right-align">Inicia sesión<i class="material-icons right">assignment_ind</i></a></p>
 				      </div>
 				    </div>
-				    <div class="card-reveal blue-grey darken-3">
-				      <span class="card-title">Ingresa a nuestro site<i class="material-icons right">close</i></span>
-				      <p class="center-align">Al entrar en nuestro site puedes hacer tus compras más fáciles, rápidas y seguras, y ayúdanos a crecer.</p>
-				      <p class="center-align">Inicia sesión y mejora tu forma de comprar.</p>
+				    <div class="card-reveal blue-grey darken-3 center-align">
+				      <span class="card-title">Ingresa al site<i class="material-icons right">close</i></span>
+				      <p>Al entrar en nuestro site puedes hacer tus compras más fáciles, rápidas y seguras, y ayúdanos a crecer.</p>
+				      <p>Inicia sesión y mejora tu forma de comprar.</p>
 				    </div>
 				  </div>
 			</div>
 		</div>
 </div>
 
-<div class="container espacio">
-	<br><br><h4 class="center-align">Gracias Por tu Preferencia</h4>
+<div class="container">
+	<br><br><h4 class="center-align">Gracias Por tu Preferencia!!!</h4>
 </div>
 
 <div class="parallax-container espacio">

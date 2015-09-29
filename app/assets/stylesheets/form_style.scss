@@ -9,7 +9,7 @@
   
    /* label underline focus color */
    .input-field input:focus {
-     border-bottom: 1px solid #1b5e20 !important;
+     border-bottom: 1px solid #1b5e20 !important; 
      box-shadow: 0 1px 0 0 #1b5e20 !important;
    }
    
@@ -25,5 +25,17 @@
    .input-field input.invalid {
      border-bottom: 1px solid #000 !important;
      box-shadow: 0 1px 0 0 #000 !important;
+   }
+
+   /*checkbox*/
+   /*.input-field input[type="checkbox"]:not(:checked), .input-field input[type="checkbox"]:checked{
+    position: relative !important;
+    left: 0px !important;
+    visibility: visible !important;
+   }*/
+
+   .margtop{
+    margin-top: 1em;
+    margin-bottom: 1em;
    }
   

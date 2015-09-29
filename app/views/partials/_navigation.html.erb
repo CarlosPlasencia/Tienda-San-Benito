@@ -9,8 +9,9 @@
         
         <ul class="right hide-on-med-and-down col s10">
           <li>
-          <%=link_to "Productos", root_path %>
+          <%=link_to "Productos", products_path %>
           </li>
+          
           <% if user_signed_in?%>
             <li>
               <%=link_to "Cerrar sesion", destroy_user_session_path,method: :delete %>
