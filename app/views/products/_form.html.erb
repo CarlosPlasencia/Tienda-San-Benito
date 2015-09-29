@@ -1,0 +1,70 @@
+  <%= form_for(@product) do |f| %>
+     <% if @product.errors.any? %>
+        <div id="error_explanation col s12">
+          <h2><%= pluralize(@product.errors.count, "error") %> prohibited this product from being saved:</h2>
+          <ul>
+          <% @product.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div class="input-field col s12">
+        <%= f.label :nombre %><br>
+        <%= f.text_field :nombre %>
+      </div>
+      <div class="input-field col s12">
+        <%= f.label :descripcion %><br>
+        <%= f.text_area :descripcion, class: "materialize-textarea" %>
+      </div>
+      <div class="input-field col s12">
+        <%= f.label :pre_venta %><br>
+        <%= f.text_field :pre_venta %>
+      </div>
+      <div class="input-field col s12">
+        <%= f.label :pre_comra %><br>
+        <%= f.text_field :pre_comra %>
+      </div>
+      <div class="input-field col s12">
+        <%= f.label :tamaño %><br>
+        <%= f.text_field :tamaño %>
+      </div>
+      <div class="input-field col s12">
+        <%= f.label :marca %><br>
+        <%= f.text_field :marca %>
+      </div>
+      <div class="input-field col s12">
+        <%= f.label :stock %><br>
+        <%= f.number_field :stock %>
+      </div>
+      <div class="input-field col s12">
+        <%= f.label :stock_min %><br>
+        <%= f.number_field :stock_min %>
+      </div>
+      
+      <div class="file-field input-field col s12">
+        <div class="btn">
+          <span>Imagen</span> 
+          <%= f.file_field :cover%>
+        </div>  
+        <div class="file-path-wrapper">
+           <input class="file-path validate" type="text">
+        </div> 
+      </div>
+       
+      <div class="input-field margtop col s12">
+        <%= f.label :Categories %><br><br>
+        <% @categories.each do |category| %>
+         <div class="input-field col s12">
+           <%= check_box_tag 'categories[]', category.id , false, :id => category.id, class: "filled-in" %>  
+           <%= label_tag category.id, category.nombre %><br>      
+        </div>
+        <% end %>
+    </div> 
+      <div >
+        <%= f.submit "Guardar" , class: "btn margtop"%>
+      </div>
+    <% end %>
+
+

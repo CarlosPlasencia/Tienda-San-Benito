@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12">
+       <p id="notice"><%= notice %></p>
+    </div>
+    <div class="col s12">
+        <h4 class="center-align blue-text text-darken-2"><%= @product.nombre %></h4>
+    </div> 
+
+    <div class="col s6">
+        <%= image_tag @product.cover.url, height:"430px", width: "460px", class: "center-align" %>
+    </div>
+
+    <div class="col s6">
+        
+       <div class="card-panel grey lighten-5 z-depth-1">
+           <strong>Tamaño: </strong> <%= @product.tamaño %>
+       </div>
+
+       <div class="card-panel grey lighten-5 z-depth-1 ">
+           <strong>Marca: </strong><%= @product.marca %>
+       </div>
+
+       <div class="card-panel grey lighten-5 z-depth-1">
+           <%= @product.descripcion %>
+       </div>
+
+       <div class="card-panel grey lighten-5 z-depth-1">
+           <strong>Stock: </strong><%= @product.stock %>
+       </div>
+       <div class="card-panel grey lighten-5 z-depth-1">
+          <div class="orange-text text-darken-3">
+              <h4 class="center-align">S/. <%= @product.pre_venta %></h4>
+          </div> 
+       </div>
+    </div>
+   
+
+    <div class="col s12">
+    <%@product.categories.each do |category| %>
+      <div class="btn green darken-4">
+        <%= link_to category.nombre, category %>
+      </div> 
+       <% end -%>
+      
+    </div>
+
+    <div class="col s12">
+       <br><br>
+       <%= link_to 'Editar', edit_product_path(@product) %> |
+       <%= link_to 'Regresar', products_path %> 
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
