@@ -12,12 +12,14 @@ gem "devise"
 gem 'parallax-rails'
 
 gem "paperclip"
+ 
+gem 'unicorn'
 
 
 
 group :development, :test do
   
-  gem 'sqlite3'
+  gem 'pg'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
