@@ -54,14 +54,19 @@
       </div>
        
       <div class="input-field margtop col s12">
-        <%= f.label :Categories %><br><br>
+        <%= f.label :Categories %><br>
         <% @categories.each do |category| %>
          <div class="input-field col s12">
            <%= check_box_tag 'categories[]', category.id , false, :id => category.id, class: "filled-in" %>  
            <%= label_tag category.id, category.nombre %><br>      
         </div>
-        <% end %>
+        <% end %> 
+        <br>
     </div> 
+    <div class="col s12">
+         <%= link_to 'Nueva Categoria', new_category_path %>
+       </div> 
+       
       <div >
         <%= f.submit "Guardar" , class: "btn margtop"%>
       </div>

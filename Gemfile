@@ -19,7 +19,7 @@ gem 'unicorn'
 
 group :development, :test do
   
-  gem 'pg'
+  gem 'sqlite3'
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
