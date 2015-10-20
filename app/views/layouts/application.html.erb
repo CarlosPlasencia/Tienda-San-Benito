@@ -11,22 +11,60 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
   <%= csrf_meta_tags %>
 </head>
-<body class="light-green lighten-4">
+<body style="background:#dfdfdf">
 
-<%= render "partials/navigation" %>
-
-<%= yield %>
-
-<%= render "partials/final" %>
+   <%= render "partials/navigation" %>
+  
+       <%= yield %>
+ 
+   <%= render "partials/final" %>
 
 <script type="text/javascript">
+  
   $(document).ready(function(){
       $('.parallax').parallax();
-      $(".button-collapse").sideNav();
-      $('.slider').slider({Interval: 4000, Transition: 300});
+      $('.button-collapse').sideNav();
+      $('.slider').slider({Interval: 4000, Transition: 300, width: 200});
       $('.modal-trigger').leanModal();
+      $('.dropdown-button').dropdown({ hover: true }); 
+
   });
+
   
+</script>
+
+<script type="text/javascript">
+   
+   var scroll1;
+   var scroll2;
+
+   $(document).scroll(function(){
+         
+        scroll1 = $(window).scrollTop();
+
+        console.log("1: " + scroll1);
+        console.log("2: " + scroll2);
+
+        if(scroll1>scroll2)
+        {
+            if($(window).scrollTop()>100)
+            {
+               $("#nav2").css('top', "-100px");  
+               $("#nav2").addClass("navbar-fixed"); 
+            }
+        }
+        else
+        {
+            if($(window).scrollTop()<100)
+            {
+               $("#nav2").css('top', "100px");
+               $("#nav2").removeClass("navbar-fixed");   
+            }
+        }
+
+        scroll2 = $(window).scrollTop();
+
+  });
 </script>
 
 </body>

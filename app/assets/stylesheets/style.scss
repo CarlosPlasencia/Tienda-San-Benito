@@ -38,3 +38,35 @@
 	margin-left: 15px !important;
 	margin-right: 15px !important; 
 }
+
+.cambioColor {color:white !important;}
+.cambioColor:hover {color:#1b5e20 !important;background-color: white !important;}
+
+.dropdown-content li > a{
+    
+    font-size: 1rem !important;
+    padding: 0.7rem !important;
+}
+
+.nav-heigth{
+    height: 100px !important;
+    line-height: 45px !important;
+
+}
+
+.navbar-fixed {
+    height: 50px !important;
+}
+
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 50px !important;
+    line-height: 48px !important;
+}
+
+.parallax-container{
+	width: 100% !important;
+}
+
+#li-from{
+	height: 50px !important;
+}
