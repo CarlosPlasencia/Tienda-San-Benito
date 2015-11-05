@@ -50,7 +50,8 @@
             if($(window).scrollTop()>100)
             {
                $("#nav2").css('top', "0px"); 
-               $("#nav2").addClass("navbar-fixed"); 
+               $("#nav2").css('position', "fixed"); 
+               $("#nav2").addClass("navbar-fixed nav-top"); 
             }
         }
         else
@@ -58,7 +59,8 @@
             if($(window).scrollTop()<100)
             {
                $("#nav2").css('top', "auto"); 
-               $("#nav2").removeClass("navbar-fixed");   
+               $("#nav2").css('position', "relative"); 
+               $("#nav2").removeClass("navbar-fixed nav-top");   
             }
         }
 
