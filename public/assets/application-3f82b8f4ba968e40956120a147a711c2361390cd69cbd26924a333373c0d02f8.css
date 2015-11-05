@@ -1,0 +1,161 @@
+/* label color */
+/* line 3, /home/carlos/storeSB/app/assets/stylesheets/form_style.scss */
+.input-field label {
+  color: #1b5e20 !important;
+}
+
+/* label focus color */
+/* line 7, /home/carlos/storeSB/app/assets/stylesheets/form_style.scss */
+.input-field input:focus + label {
+  color: #1b5e20 !important;
+}
+
+/* label underline focus color */
+/* line 12, /home/carlos/storeSB/app/assets/stylesheets/form_style.scss */
+.input-field input:focus {
+  border-bottom: 1px solid #1b5e20 !important;
+  box-shadow: 0 1px 0 0 #1b5e20 !important;
+}
+
+/* valid color */
+/* line 20, /home/carlos/storeSB/app/assets/stylesheets/form_style.scss */
+.input-field input.valid {
+  border-bottom: 1px solid #000 !important;
+  box-shadow: 0 1px 0 0 #000 !important;
+}
+
+/* invalid color */
+/* line 26, /home/carlos/storeSB/app/assets/stylesheets/form_style.scss */
+.input-field input.invalid {
+  border-bottom: 1px solid #000 !important;
+  box-shadow: 0 1px 0 0 #000 !important;
+}
+
+/*checkbox*/
+/*.input-field input[type="checkbox"]:not(:checked), .input-field input[type="checkbox"]:checked{
+ position: relative !important;
+ left: 0px !important;
+ visibility: visible !important;
+}*/
+/* line 38, /home/carlos/storeSB/app/assets/stylesheets/form_style.scss */
+.margtop {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+/* line 3, /home/carlos/storeSB/app/assets/stylesheets/style.scss */
+.titulo-index {
+  font-family: 'Droid Serif', serif;
+  margin-top: 1em;
+}
+
+/* line 8, /home/carlos/storeSB/app/assets/stylesheets/style.scss */
+.logo {
+  margin-left: 0.5em;
+}
+
+/* line 12, /home/carlos/storeSB/app/assets/stylesheets/style.scss */
+.espacio {
+  margin-top: 3em;
+}
+
+/* line 15, /home/carlos/storeSB/app/assets/stylesheets/style.scss */
+.espacio1 {
+  margin-top: 2em;
+}
+
+/* line 18, /home/carlos/storeSB/app/assets/stylesheets/style.scss */
+.final {
+  height: 120px;
+  width: 100%;
+}
+
+/* line 23, /home/carlos/storeSB/app/assets/stylesheets/style.scss */
+.altura {
+  height: 100px !important;
+}
+
+/* line 27, /home/carlos/storeSB/app/assets/stylesheets/style.scss */
+.quitar-top {
+  margin-top: 0px !important;
+}
+
+/* line 31, /home/carlos/storeSB/app/assets/stylesheets/style.scss */
+.mensaje {
+  background-color: white;
+  font-size: 15px;
+}
+
+/* line 36, /home/carlos/storeSB/app/assets/stylesheets/style.scss */
+.card-padding {
+  padding: 0px !important;
+  margin-left: 15px !important;
+  margin-right: 15px !important;
+}
+
+/* line 42, /home/carlos/storeSB/app/assets/stylesheets/style.scss */
+.cambioColor {
+  color: white !important;
+}
+
+/* line 43, /home/carlos/storeSB/app/assets/stylesheets/style.scss */
+.cambioColor:hover {
+  color: #1b5e20 !important;
+  background-color: white !important;
+}
+
+/* line 45, /home/carlos/storeSB/app/assets/stylesheets/style.scss */
+.dropdown-content li > a {
+  font-size: 1rem !important;
+  padding: 0.7rem !important;
+}
+
+/* line 51, /home/carlos/storeSB/app/assets/stylesheets/style.scss */
+.nav-heigth {
+  height: 100px !important;
+  line-height: 45px !important;
+}
+
+/* line 57, /home/carlos/storeSB/app/assets/stylesheets/style.scss */
+.navbar-fixed {
+  height: 50px !important;
+}
+
+/* line 61, /home/carlos/storeSB/app/assets/stylesheets/style.scss */
+nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+  height: 50px !important;
+  line-height: 48px !important;
+}
+
+/* line 66, /home/carlos/storeSB/app/assets/stylesheets/style.scss */
+.parallax-container {
+  width: 100% !important;
+}
+
+/* line 70, /home/carlos/storeSB/app/assets/stylesheets/style.scss */
+#li-from {
+  height: 50px !important;
+}
+
+/* line 74, /home/carlos/storeSB/app/assets/stylesheets/style.scss */
+.nav-top {
+  top: 0px !important;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ 
+ */
+
+
+ 
