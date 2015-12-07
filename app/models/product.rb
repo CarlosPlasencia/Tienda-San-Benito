@@ -31,8 +31,5 @@ class Product < ActiveRecord::Base
         @categories.each do |category_id|
 			HasCategory.create(category_id: category_id, product_id: self.id )
 		end 
-
 	end
-
-
 end

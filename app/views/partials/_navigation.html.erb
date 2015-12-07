@@ -44,12 +44,12 @@
           </li>
 
           <li id="li-from">
-          <form>
+         <%= form_tag({:controller => "products", :action => "index"}, :method => :get) do %>
             <div class="input-field">
-              <input id="search" type="search" required>
+              <input id="search" type="search" required name="q" <%= @q %>>
               <label for="search"><i class="material-icons">search</i></label>
             </div>
-          </form>
+          <% end %>
           </li>
         </ul>
 

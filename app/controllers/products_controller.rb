@@ -5,7 +5,13 @@ class ProductsController < ApplicationController
   # GET /products
   # GET /products.json
   def index
+    @q = params[:q]
+    if @q
+    @products = Product.where("nombre LIKE ? OR tamaño LIKE ?","%#{@q}%","%#{@q}%")
+  else
     @products = Product.all
+   end
+    
   end
 
   # GET /products/1

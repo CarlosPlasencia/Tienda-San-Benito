@@ -3,7 +3,8 @@
 <head>
   <title>StoreSB</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag "application" %>
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -13,61 +14,14 @@
 </head>
 <body style="background:#dfdfdf">
 
-   <%= render "partials/navigation" %>
+
+
+<%= render "partials/navigation" %>
   
        <%= yield %>
  
-   <%= render "partials/final" %>
+<%= render "partials/final" %>
 
-<script type="text/javascript">
-  
-  $(document).ready(function(){
-      $('.parallax').parallax();
-      $('.button-collapse').sideNav();
-      $('.slider').slider({Interval: 4000, Transition: 300, width: 200});
-      $('.modal-trigger').leanModal();
-      $('.dropdown-button').dropdown({ hover: true }); 
-
-  });
-
-  
-</script>
-
-<script type="text/javascript">
-   
-   var scroll1;
-   var scroll2;
-
-   $(document).scroll(function(){
-         
-        scroll1 = $(window).scrollTop();
-
-        console.log("1: " + scroll1);
-        console.log("2: " + scroll2);
-
-        if(scroll1>scroll2)
-        {
-            if($(window).scrollTop()>100)
-            {
-               $("#nav2").css('top', "0px"); 
-               $("#nav2").css('position', "fixed"); 
-               $("#nav2").addClass("navbar-fixed nav-top"); 
-            }
-        }
-        else
-        {
-            if($(window).scrollTop()<100)
-            {
-               $("#nav2").css('top', "auto"); 
-               $("#nav2").css('position', "relative"); 
-               $("#nav2").removeClass("navbar-fixed nav-top");   
-            }
-        }
-
-        scroll2 = $(window).scrollTop();
-
-  });
-</script>
 
 </body>
 

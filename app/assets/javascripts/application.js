@@ -12,7 +12,31 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+
+$(document).ready(function(){
+     
+    $('.parallax').parallax();
+    $('.button-collapse').sideNav();
+    $('.slider').slider({Interval: 4000, Transition: 300, width: 200});
+    $('.modal-trigger').leanModal();
+    $('.dropdown-button').dropdown({ hover: true }); 
+   
+});
 
 
+
+$(document).scroll(function(){
+         
+    if($(window).scrollTop()>100)
+    {
+        $("#nav2").css('top', "0px"); 
+        $("#nav2").css('position', "fixed"); 
+        $("#nav2").addClass("navbar-fixed nav-top"); 
+    }
+    else
+    {
+        $("#nav2").css('top', "auto"); 
+        $("#nav2").css('position', "relative"); 
+        $("#nav2").removeClass("navbar-fixed nav-top");   
+    }
+});
